@@ -32,3 +32,22 @@ else:
 
 #https://blog.csdn.net/xiaosongbk/article/details/53262796
 #Selenium Webdriver弹出框的种种类型
+
+#https://troubleshootblog.com/2014/11/06/code-automating-extension-automation-with-selenium/
+Code : Automating Extension automation with Selenium
+Below code is for Chrome. This will work for Firefox  with little change in code.
+
+// Load extension file
+File file = new File(“chrome.crx”);
+ChromeOptions options = new ChromeOptions();
+options.addExtensions(file);
+
+// Launch browser instance with the extension
+WebDriver driver = new ChromeDriver(options);
+
+// Access Extension in browser window .. This further allows you to automate all the actions through Selenium
+driver.get(“extension://palgcoflnoaklkflllnmheiollkgkipm/popup.html”);
+
+#https://huddle.eurostarsoftwaretesting.com/how-to-selenium-popups-with-selenium/
+#http://www.cnblogs.com/xingkongyihao/p/9280983.html
+#https://www.cnblogs.com/small-bud/p/9064485.html
