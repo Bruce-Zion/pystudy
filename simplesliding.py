@@ -1,4 +1,13 @@
+from selenium import webdriver
 from selenium.webdriver import ActionChains
+
+# Configure the necessary command-line option.
+options = webdriver.ChromeOptions()
+options.add_argument(r'--load-extension=C:\Users\mtk81153\AppData\Local\Google\Chrome\User Data\Profile 2\Extensions\ammjpmhgckkpcamddpolhchgomcojkle\6.1.10_0')
+
+# Initalize the driver with the appropriate options.
+driver = webdriver.Chrome(chrome_options=options)
+
 
 action = ActionChains(driver)
 
